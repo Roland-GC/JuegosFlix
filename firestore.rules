@@ -1,0 +1,16 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Permitir acceso solo a los documentos de usuarios autenticados
+    match /users/{userId} {
+      // Permitir leer y escribir solo si el usuario está autenticado y su ID coincide con el documento
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Otras colecciones pueden tener reglas diferentes si es necesario
+    // match /otherCollection/{docId} {
+    //   allow read, write: if request.auth != null;
+    // }
+  }
+}
