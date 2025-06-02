@@ -1,5 +1,34 @@
-Documentación 
+# Nombre del Proyecto
 
-Para iniciar el proyecto en local debemos utilizar el comando npm install (teniendo npm instalado previamente) para instalar las depencias del proyecto.
-El siguiente paso es usar npm run dev para iniciar el proyecto de manera local. Una vez realizado el comando simplemente usaremos el enlace proporcionado para ir a nuestra pagina.
-Deberemos usar las claves para poder usar firebase (para ello deberemos crear una cuenta y usar las claves que nos proporciona la pagina y usarlas en el archivo firebase.js) 
+Proyecto para busqueda de videojuegos con firebase, inicio de sesion y comentarios. 
+
+---
+
+## Requisitos
+
+- Node.js (https://nodejs.org/)  
+- npm (generalmente instalado junto con Node.js)  
+- Cuenta en Firebase (https://firebase.google.com/)
+- Cuenta en RAWG (https://rawg.io/)
+
+---
+
+## Instalación y ejecución
+
+1. Clona este repositorio o descarga el código.
+
+2. Introduce las APIS (en donde pone `your key`copias tu clave de https://rawg.io/) en src/services/videogames.js 
+
+3. Introduce las APIS de firebase en firebase.js (copia y pega las credentiales que te da firebase)
+
+4. Abre una terminal en la carpeta raíz del proyecto.
+
+5. Instala las dependencias:
+
+   npm install
+
+6. Inicia el servidor de desarrollo:
+
+   npm run dev
+
+7. Abre el enlace que aparece en la terminal (ejemplo: http://localhost:5173) en tu navegador para ver la aplicación.
