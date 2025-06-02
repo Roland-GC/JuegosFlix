@@ -1,4 +1,4 @@
-# Nombre del Proyecto
+# JuegosFlix
 
 Proyecto para busqueda de videojuegos con firebase, inicio de sesion y comentarios. 
 
